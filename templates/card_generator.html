@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://www.pythonanywhere.com/user/Dhun1502/files/home/Dhun1502/mysite/templates/bday_card.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator App</title>
+<style>
+    * {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    body {
+        background-color: darkblue;
+        text-align: center;
+        color: white;
+    }
+
+    .input {
+        margin: 10px;
+    }
+
+    input[type="text"],input[type="number"],input[type="submit"] {
+        padding: 10px 15px;
+        width: 25%;
+    }
+</style></head>
+
+
+<body>
+    <h1>Card Generator</h1>
+    <div class="enter">
+        <form action="/card_generator" method="post">
+            <div class="input">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name..."><br>
+            </div>
+            <div class="input">
+                <input type="number" name="age" id="age" placeholder="Enter Your Age..."> <br>
+            </div>
+            <div class="input">
+                <label for="xmas">Christmas Card</label>
+                <input type="radio" name="card_selection" id="xmas" value="xmas">
+                <label for="bday">Birthday Card</label>
+                <input type="radio" name="card_selection" id="bday" value="bday"><br>
+            </div>
+            <h3>Select Font Style</h3>
+            <div class="input">
+                <label for="arial" style="font-family: Arial">Arial</label>
+                <input type="radio" name="font_selection" id="arial" value="Arial">
+
+                <label for="garamond" style="font-family: Garamond">Garamond</label>
+                <input type="radio" name="font_selection" id="garamond" value="Garamond">
+
+                <label for="courier" style="font-family: 'Courier New'">Courier New</label>
+                <input type="radio" name="font_selection" id="courier" value="Courier New">
+            </div>
+            
+            <h3>Select Image</h3>
+
+        
+        <!-- To Display Background Options for the Card -->
+
+        <!-- <div class="input">
+            {% for image in images %}
+            <input type="radio" name="image_selection" value="{{ image['url'] }}">
+            <img src="{{ image['url'] }}" width="100" height="100">
+            {% endfor %}
+        </div>
+         -->
+        </form>
+
+            <div class="input">
+                <input type="submit" value="Generate Card">
+            </div>
+        </form>
+    </div>
+    
+</body></html>

@@ -1,0 +1,14 @@
+[
+    {
+        "type" : "xmas",
+        "url" : "https://images.pexels.com/photos/290220/pexels-photo-290220.jpeg" 
+    },
+    {
+        "type" : "bday",
+        "url" : "https://images.pexels.com/photos/5725882/pexels-photo-5725882.jpeg" 
+    },
+    {
+        "type" : "bday",
+        "url" : "https://images.pexels.com/photos/5485112/pexels-photo-5485112.jpeg" 
+    }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://www.pythonanywhere.com/user/Dhun1502/files/home/Dhun1502/mysite/templates/xmas_greeting_card.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+<style>
+    * {
+        font-family: {{font}};
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    section  {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .age8to10 {
+        background: url(https://images.template.net/wp-content/uploads/2016/11/18151853/cristmas-desk1.jpg) no-repeat center center/cover;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color:white;
+        text-shadow: 2px 2px black;
+    }
+
+    h2 {
+        font-size: 3rem;
+        color:white;
+        text-shadow: 2px 2px black;
+    }
+
+
+    .age11to13{
+        background:  url(https://wallpaperaccess.com/full/116339.jpg) no-repeat center center/cover;
+
+    }
+
+    .age13plus{
+        background: url(https://images.template.net/wp-content/uploads/2015/11/Decorated-Christmas-Background-File-Format-Downloa.jpg) no-repeat center center/cover;
+    }
+</style></head>
+
+
+<body>
+    {% if age >= 8 and age <= 10 %}
+    <section class="age8to10">
+        <h1>MERRY CHRISTMAS {{name}} </h1>
+        <h2>Congrats on your {{age}}th Christmas</h2>
+        <h2>Have An Amazing Day!</h2>
+    </section>
+    {% elif age >= 11 and age <= 13 %}
+    <section class="age11to13">
+        <h1>MERRY CHRISTMAS {{name}}</h1>
+        <h2>Congrats on your {{age}}th Christmas</h2>
+        <h2>Have An Amazing Day!</h2>
+    </section>
+    {% elif age > 13 %}
+    <section class="age13plus">
+        <h1>MERRY CHRISTMAS {{name}}</h1>
+        <h2>Congrats on your {{age}}th Christmas</h2>
+        <h2>Have An Amazing Day!</h2>
+    </section>
+    {% endif %}
+
+
+</body></html>
